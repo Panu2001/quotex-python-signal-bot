@@ -1,0 +1,73 @@
+{
+  "paper_only": true,
+  "data_dir": "./data/paper_lab",
+  "auto_loop_enabled": true,
+  "auto_loop_interval_sec": 15,
+  "asset_allowlist": [
+    "EURUSD-OTC",
+    "GBPUSD-OTC",
+    "USDJPY-OTC",
+    "AUDUSD-OTC"
+  ],
+  "expiry_allowlist_sec": [
+    60,
+    120,
+    300
+  ],
+  "default_stake": 10.0,
+  "starting_balance": 1000.0,
+  "default_payout": 0.80,
+  "fee_rate": 0.0,
+  "tie_rule": "refund",
+  "max_quote_age_sec": 15,
+  "settlement_tolerance_sec": 10,
+  "retrain_min_new_outcomes": 25,
+  "retrain_interval_sec": 1800,
+  "max_concurrent_workers": 4,
+  "ai_provider": "gemini",
+  "ai_model": "gemini-4-hydrogen",
+  "ai_batch_size": 5,
+  "ai_max_retries": 5,
+  "ai_retry_base_delay_sec": 30,
+  "ai_min_request_interval_sec": 60,
+  "ai_max_requests_per_hour": 15,
+  "telegram_enabled": true,
+  "telegram_allowed_chat_ids": [
+    "5671853590"
+  ],
+  "min_payout_floor_pct": 70.0,
+  "invert_signals": true,
+  "telegram_min_actionable_sec_left": 20,
+  "telegram_max_retries": 3,
+  "telegram_request_timeout_sec": 8,
+  "evaluation": {
+    "n_walk_forward_windows": 3,
+    "min_train_samples": 30,
+    "min_trades_total": 12,
+    "min_trades_per_window": 3,
+    "min_windows_beating_incumbent": 2,
+    "min_net_return_improvement": 5.0,
+    "max_drawdown_pct": 30.0,
+    "max_brier_degradation": 0.02,
+    "min_shadow_trades": 10,
+    "min_shadow_net_improvement": 0.0,
+    "min_asset_breakdown_samples": 5
+  },
+  "rollback": {
+    "rolling_window_trades": 15,
+    "min_rolling_win_rate": 0.45,
+    "max_consecutive_losses": 6,
+    "max_rolling_drawdown_pct": 25.0
+  },
+  "initial_rules": {
+    "min_signal_probability": 0.58,
+    "min_edge_margin": 0.02,
+    "volatility_min": 0.00005,
+    "volatility_max": 0.015,
+    "allowed_utc_hours": [
+      0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11,
+      12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23
+    ],
+    "max_concurrent_open_trades": 3
+  }
+}

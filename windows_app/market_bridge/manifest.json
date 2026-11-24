@@ -1,0 +1,8 @@
+{
+  "manifest_version": 3,
+  "name": "SignalDesk Market Bridge",
+  "version": "1.0.0",
+  "permissions": ["activeTab", "scripting", "nativeMessaging", "storage"],
+  "background": {"service_worker": "worker.js"},
+  "action": {"default_popup": "popup.html"}
+}

@@ -1,0 +1,37 @@
+{
+  "pairs": [
+    "EURUSD-OTC",
+    "GBPUSD-OTC",
+    "USDJPY-OTC",
+    "AUDCAD-OTC",
+    "XAUUSD-OTC",
+    "BTCUSDT",
+    "ETHUSDT"
+  ],
+  "timeframe": "1m",
+  "poll_interval_sec": 15,
+  "base_stake": 10.0,
+  "default_payout": 85.0,
+  "risk_mode": "martingale",
+  "martingale_multiplier": 2.2,
+  "max_martingale_steps": 2,
+  "telegram_bot_token": "",
+  "telegram_chat_id": "",
+  "telegram_min_confidence": 70.0,
+  "signal_lead_minutes": 0,
+  "analyzed_assets": {},
+  "notify_assets": {},
+  "quotex_ssid": "",
+  "account_type": "DEMO",
+  "auto_trade": false,
+  "strategy_config": {
+    "min_confidence": 62.0,
+    "rsi_oversold": 30,
+    "rsi_overbought": 70,
+    "bb_period": 20,
+    "bb_std": 2.0,
+    "ema_fast": 9,
+    "ema_slow": 21,
+    "adx_threshold": 20
+  }
+}

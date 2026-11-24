@@ -1,0 +1,10 @@
+# Core signal engine runs purely on Python 3.10+ standard library!
+# Optional packages for live Quotex WebSocket / async extensions:
+websocket-client>=1.8.0
+requests>=2.32.0
+httpx>=0.27.0
+pywebview>=5; sys_platform == "win32"
+
+# Quantitative Analysis & Machine Learning Extensions:
+pandas>=2.2.0
+pandas-ta>=0.3.14b0

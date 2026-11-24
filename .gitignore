@@ -1,0 +1,46 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Production & Build outputs
+dist/
+build/
+coverage/
+
+# Environment & Secrets (CRITICAL: Never commit credentials)
+.env*
+!.env.example
+session.json
+python_bot/session.json
+*.session.json
+
+# SQLite Databases & Local Data
+*.sqlite3
+*.sqlite
+*.db
+python_bot/data/
+
+# Python caches and bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+
+# Logs & temp files
+*.log
+*.tmp
+temp/
+tmp/
+
+# OS & Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.aistudio/

@@ -1,0 +1,6 @@
+{
+  "name": "Quotex Python Signal Bot",
+  "description": "Multi-strategy Python trading signal engine, live market scanner, strategy backtester, and exportable bot suite for Quotex binary options.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
